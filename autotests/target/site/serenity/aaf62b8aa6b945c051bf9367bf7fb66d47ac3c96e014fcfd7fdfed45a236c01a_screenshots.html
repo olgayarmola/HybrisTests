@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <a
+                    href="f4aab957d67fb024957c259ede251ab9084ab4aa31600b43785b567e27f6af94.html">Login On Site</a>
+                > <a
+                    href="aaf62b8aa6b945c051bf9367bf7fb66d47ac3c96e014fcfd7fdfed45a236c01a.html"> </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-08-2017 12:24</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Login On Site </span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a customer on the site I want to login to my account with my login and password
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="1d0c02fb9cb969bbd9e2f900ec6333e01b070c6fb5e26345e9374169cfab9e68.html">Regression
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="c3090440ebcc0de36d8be1be51b9cdb0af84e316666d8a2cdc7ba0d020ddf16b.html">Login
+                                    (capability)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-3x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="scaled_98418673a0b098aee2d2081ee3619a80c15a27899e2f174c81b6497e43388c75.png" title="Given open &quot;login&quot; page" width="960"/>
+                <img src="scaled_2084a3475ad62876be63de20c485f4ed607449ac1cfe37ef194279bd06174343.png" title="Navigate to storefront" width="960"/>
+                <img src="2084a3475ad62876be63de20c485f4ed607449ac1cfe37ef194279bd06174343.png" title="Navigate to sign in page" width="960"/>
+                <img src="98418673a0b098aee2d2081ee3619a80c15a27899e2f174c81b6497e43388c75.png" title="Navigate to sign in page" width="960"/>
+                <img src="scaled_9393abac73d6448a2696dbc659a5ec294bdea4eeb8c804b6a796ba6666b17489.png" title="When enter &quot;olga.yarmola@zaelab.com&quot; in the E-mail address field" width="960"/>
+                <img src="9393abac73d6448a2696dbc659a5ec294bdea4eeb8c804b6a796ba6666b17489.png" title="Enter login email: olga.yarmola@zaelab.com" width="960"/>
+                <img src="scaled_7700b882d39157320033fab8e0b76e90dc00bdb0062b54c7bf38187fb05a7c3e.png" title="When enter &quot;111111&quot; in the Password field" width="960"/>
+                <img src="scaled_5d712d5431a6f1d3b947fc94d4192b4afe2fe335586c73c52f74ea644e7d55ca.png" title="When enter &quot;111111&quot; in the Password field" width="960"/>
+                <img src="5d712d5431a6f1d3b947fc94d4192b4afe2fe335586c73c52f74ea644e7d55ca.png" title="Enter password: 111111" width="960"/>
+                <img src="scaled_89fbab36e15414958fa10f27c055ecc31f5581f6317710b980ab0633899e0b65.png" title="When click on the login button" width="960"/>
+                <img src="scaled_f43da1d2d1c85b82c6af350625d9ccf4f45fbd1ffc6e3c22c9df64d31b476dea.png" title="When click on the login button" width="960"/>
+                <img src="f43da1d2d1c85b82c6af350625d9ccf4f45fbd1ffc6e3c22c9df64d31b476dea.png" title="Click login button" width="960"/>
+                <img src="f43da1d2d1c85b82c6af350625d9ccf4f45fbd1ffc6e3c22c9df64d31b476dea.png" title="Then the user is logged in" width="960"/>
+                <img src="f43da1d2d1c85b82c6af350625d9ccf4f45fbd1ffc6e3c22c9df64d31b476dea.png" title="Verify user is logged in: <span class='success-color'>SUCCESS</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.5.1-rc.5</span>
+</div>
+</body>
+</html>
