@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<!--[if IE 7]>
+<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">
+<![endif]--><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Bootstrap -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script><link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <a
+                    href="74bd796b69c9dec4db087e3f2a8127f7f2e4d4f7dbb00d5a08298beb0e808cb1.html">Registration Of New User On Site</a>
+                > <a
+                    href="c94f0f07940e8af4cfbeb18f9c8c0bcc51b5377d43fe11d386e6ba6d16903a61.html">Verify that user can register on site by submitting registra&hellip; </a>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="7ea0a5e2d679b9deeda9910ae4a9bcd3a281e0d908303a9e16e486103e98880c.html"><i class="fa fa-comments-o"></i> Capabilities</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 11-09-2017 23:28</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Registration Of New User On Site </span>
+                                    <span class="badge tag-badge">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="1d0c02fb9cb969bbd9e2f900ec6333e01b070c6fb5e26345e9374169cfab9e68.html">Regression
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge">
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" href="70e822bef81a128a31d20d12c432fd91121ec53ad35ad34c20a939b9fc2cec9a.html">Registration
+                                    (capability)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-3x' title='ERROR'></i></span>
+                            <span class="test-case-title">
+                                <span class="error-color">Verify That User Can Register On Site By Submitting Registration Form
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+                <div class="panel-heading"><span class='error-caption ellipsis'>ERROR: No such element exception: The follow...</span></div>
+                <div class="panel-body">
+                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="de74df709a837426ed4598008670e77422d32a23bff40de71e5646361ad00f80.png" title="Given open registration page" width="960"/>
+                <img src="de74df709a837426ed4598008670e77422d32a23bff40de71e5646361ad00f80.png" title="Navigate to registration page" width="960"/>
+                <img src="35ff23232e4c080941945752599db8b63beba6149ea31c5eeb145ef85324caca.png" title="When select &quot;Miss&quot; title in the Title dropdown" width="960"/>
+                <img src="35ff23232e4c080941945752599db8b63beba6149ea31c5eeb145ef85324caca.png" title="Select title: Miss" width="960"/>
+                <img src="7d5d795da5fb37b83a6dc896cefa410ea34892972c4759dc6d291c8481c5cebd.png" title="When enter first name &quot;Olga&quot; in the First Name field" width="960"/>
+                <img src="7d5d795da5fb37b83a6dc896cefa410ea34892972c4759dc6d291c8481c5cebd.png" title="Enter first name: Olga" width="960"/>
+                <img src="ba0693f192432ef642360124e82d6f1b82dff0eecd0a3e9eb7ab892134896a4f.png" title="When enter last name &quot;Yarmola&quot; in the Last Name field" width="960"/>
+                <img src="dcf5a0360513384447582945ab1e80eadece9e16521e1cbcdfdf1bafcb7a27a6.png" title="When enter last name &quot;Yarmola&quot; in the Last Name field" width="960"/>
+                <img src="dcf5a0360513384447582945ab1e80eadece9e16521e1cbcdfdf1bafcb7a27a6.png" title="Enter last name: Yarmola" width="960"/>
+                <img src="0d9d1c66afa5534f8103cc63bf0ea18289a365013cbf94868b377d294b6e6fbc.png" title="When enter e-mail &quot;olga.yarmola@zaelab.com&quot; in the Email Address field" width="960"/>
+                <img src="ac368a02a3a94010ff3d01bb61bcd43891814f732398f1c2b2b7d62736efe530.png" title="When enter e-mail &quot;olga.yarmola@zaelab.com&quot; in the Email Address field" width="960"/>
+                <img src="ac368a02a3a94010ff3d01bb61bcd43891814f732398f1c2b2b7d62736efe530.png" title="Enter email address: olga.yarmola@zaelab.com" width="960"/>
+                <img src="8c4dd029bf7aa0999181e04932c504d87e09f23e04e60111b500be049d7d2990.png" title="When enter password &quot;111111&quot; in the Password filed" width="960"/>
+                <img src="535f84c5a2f0cc63eb2cb2e4c01bcc028f7bf9588b92d8ccd96289da76c6011c.png" title="When enter password &quot;111111&quot; in the Password filed" width="960"/>
+                <img src="889d09afb3f9a5e853cc89499181b29d0ff1400e926c38a88d85a5e1ea89f6ae.png" title="Enter password: 111111" width="960"/>
+                <img src="27fda353019c323abe221ba96c99fd771e51e392c53216faf81536b36fd03cee.png" title="When confirm password &quot;111111&quot; in the Confirm Password field" width="960"/>
+                <img src="889d09afb3f9a5e853cc89499181b29d0ff1400e926c38a88d85a5e1ea89f6ae.png" title="Enter cconfirm password: 111111" width="960"/>
+                <img src="27fda353019c323abe221ba96c99fd771e51e392c53216faf81536b36fd03cee.png" title="Enter cconfirm password: 111111" width="960"/>
+                <img src="4bd94493e13d83a0d0552a76639349eb986524175b116bd25695be598155da08.png" title="When click on the Register button" width="960"/>
+                <img src="scaled_fac7f943cfa906dc30a94e7d29182bcdf97e9a11ba6671d94d7c55be874a53d6.png" title="When click on the Register button" width="960"/>
+                <img src="fac7f943cfa906dc30a94e7d29182bcdf97e9a11ba6671d94d7c55be874a53d6.png" title="Submit registration form" width="960"/>
+                <img src="fac7f943cfa906dc30a94e7d29182bcdf97e9a11ba6671d94d7c55be874a53d6.png" title="Then user is registered" width="960"/>
+                <img src="fac7f943cfa906dc30a94e7d29182bcdf97e9a11ba6671d94d7c55be874a53d6.png" title="Verify that user is registered: <span class='error-color'>ERROR</span>" width="960"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 1.5.1-rc.5</span>
+</div>
+</body>
+</html>

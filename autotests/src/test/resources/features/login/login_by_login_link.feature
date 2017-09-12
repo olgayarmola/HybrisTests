@@ -3,7 +3,7 @@ Feature: Login on site
 
   @Regression
   Scenario: Verify that user can login on site by entering e-mail and password
-   Given open "login" page
+   Given open login page
     When enter "olga.yarmola@zaelab.com" in the E-mail address field
     When enter "111111" in the Password field
     When click on the login button

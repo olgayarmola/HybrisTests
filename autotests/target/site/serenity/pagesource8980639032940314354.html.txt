@@ -1,0 +1,686 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+	<title>
+		Login | Electronics Site</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+	<meta name="keywords" />
+<meta name="description" />
+<meta name="robots" content="index,nofollow" />
+<link rel="shortcut icon" type="image/x-icon" media="all" href="/yacceleratorstorefront/_ui/responsive/theme-alpha/images/favicon.ico" />
+
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic" />
+<link rel="stylesheet" type="text/css" media="all" href="/yacceleratorstorefront/_ui/responsive/theme-alpha/css/style.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/yacceleratorstorefront/_ui/addons/smarteditaddon/responsive/common/css/smarteditaddon.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/yacceleratorstorefront/_ui/addons/liveeditaddon/responsive/common/css/liveeditaddon.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/yacceleratorstorefront/_ui/addons/textfieldconfiguratortemplateaddon/responsive/common/css/textfieldconfiguratortemplateaddon.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/yacceleratorstorefront/_ui/addons/customerticketingaddon/responsive/common/css/customerticketingaddon.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/yacceleratorstorefront/_ui/addons/assistedservicestorefront/responsive/common/css/assistedservicestorefront.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/yacceleratorstorefront/_ui/addons/assistedservicestorefront/responsive/common/css/storeFinder.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="/yacceleratorstorefront/_ui/addons/orderselfserviceaddon/responsive/common/css/orderselfserviceaddon.css" />
+		<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript" src="/yacceleratorstorefront/_ui/shared/js/analyticsmediator.js"></script>
+<script type="text/javascript">
+/* Google Analytics */
+
+var googleAnalyticsTrackingId = 'your_google_analytics_tracking_id';
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', googleAnalyticsTrackingId]);
+
+
+		_gaq.push(['_trackPageview']);
+	
+
+(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+
+function trackAddToCart_google(productCode, quantityAdded) {
+	_gaq.push(['_trackEvent', 'Cart', 'AddToCart', productCode, quantityAdded]);
+}
+
+function trackUpdateCart(productCode, initialQuantity, newQuantity) {
+	if (initialQuantity != newQuantity) {
+		if (initialQuantity &gt; newQuantity) {
+			_gaq.push(['_trackEvent', 'Cart', 'RemoveFromCart', productCode, initialQuantity - newQuantity]);
+		} else {
+			_gaq.push(['_trackEvent', 'Cart', 'AddToCart', productCode, newQuantity - initialQuantity]);
+		}
+	}
+}
+
+function trackRemoveFromCart(productCode, initialQuantity) {
+	_gaq.push(['_trackEvent', 'Cart', 'RemoveFromCart', productCode, initialQuantity]);
+}
+
+window.mediator.subscribe('trackAddToCart', function(data) {
+	if (data.productCode &amp;&amp; data.quantity)
+	{
+		trackAddToCart_google(data.productCode, data.quantity);
+	}
+});
+
+window.mediator.subscribe('trackUpdateCart', function(data) {
+	if (data.productCode &amp;&amp; data.initialCartQuantity &amp;&amp; data.newCartQuantity)
+	{
+		trackUpdateCart(data.productCode, data.initialCartQuantity, data.newCartQuantity);
+	}
+});
+
+window.mediator.subscribe('trackRemoveFromCart', function(data) {
+	if (data.productCode &amp;&amp; data.initialCartQuantity)
+	{
+		trackRemoveFromCart(data.productCode, data.initialCartQuantity);
+	}
+});
+</script>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+</head>
+
+<body class="page-login pageType-ContentPage template-pages-LoginPageTemplate pageLabel-login smartedit-page-uid-login smartedit-page-uuid-eyJpdGVtSWQiOiJsb2dpbiIsImNhdGFsb2dJZCI6ImVsZWN0cm9uaWNzQ29udGVudENhdGFsb2ciLCJjYXRhbG9nVmVyc2lvbiI6Ik9ubGluZSJ9 smartedit-catalog-version-uuid-electronicsContentCatalog/Online  language-en">
+
+	<div class="branding-mobile hidden-md hidden-lg">
+			<div class="js-mobile-logo"><a href="/yacceleratorstorefront/electronics/en/"><img title="hybris Accelerator" alt="hybris Accelerator" src="/yacceleratorstorefront/medias/logo-hybris-responsive.svg?context=bWFzdGVyfGltYWdlc3w1Mzc5fGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2gyMy9oM2QvODc5NjY3ODg0ODU0Mi5zdmd8NmUzYjQwYjMyMTYwZjA3NzZlMWRlMGRiN2I1Y2JhOWFiZjUzZGFjN2UwNjdmYTA1MTcxNGI5Yzg1NGEwODE0MA" /></a></div>
+		</div>
+		<main data-currency-iso-code="USD">
+			<a href="#skip-to-content" class="skiptocontent" data-role="none">Skip to content</a>
+			<a href="#skiptonavigation" class="skiptonavigation" data-role="none">Skip to navigation menu</a>
+
+
+			<div class="yCmsContentSlot container">
+</div><header class="js-mainHeader">
+	<nav class="navigation navigation--top hidden-xs hidden-sm">
+		<div class="row">
+			<div class="col-sm-12 col-md-4">
+				<div class="nav__left js-site-logo">
+					<div class="yCmsComponent yComponentWrapper">
+<div class="banner__component banner">
+	<a href="/yacceleratorstorefront/electronics/en/"><img title="hybris Accelerator" alt="hybris Accelerator" src="/yacceleratorstorefront/medias/logo-hybris-responsive.svg?context=bWFzdGVyfGltYWdlc3w1Mzc5fGltYWdlL3N2Zyt4bWx8aW1hZ2VzL2gyMy9oM2QvODc5NjY3ODg0ODU0Mi5zdmd8NmUzYjQwYjMyMTYwZjA3NzZlMWRlMGRiN2I1Y2JhOWFiZjUzZGFjN2UwNjdmYTA1MTcxNGI5Yzg1NGEwODE0MA" /></a>
+		</div></div></div>
+			</div>
+			<div class="col-sm-12 col-md-8">
+				<div class="nav__right">
+					<ul class="nav__links nav__links--account">
+						<li class="liOffcanvas">
+									<a href="/yacceleratorstorefront/electronics/en/login">
+											Sign in / Register</a>
+									</li>
+							</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="hidden-xs hidden-sm js-secondaryNavAccount collapse" id="accNavComponentDesktopOne">
+		<ul class="nav__links">
+
+		</ul>
+	</div>
+	<div class="hidden-xs hidden-sm js-secondaryNavCompany collapse" id="accNavComponentDesktopTwo">
+		<ul class="nav__links js-nav__links">
+
+		</ul>
+	</div>
+	<nav class="navigation navigation--middle js-navigation--middle">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="mobile__nav__row mobile__nav__row--table">
+					<div class="mobile__nav__row--table-group">
+						<div class="mobile__nav__row--table-row">
+							<div class="mobile__nav__row--table-cell visible-xs hidden-sm">
+								<button class="mobile__nav__row--btn btn mobile__nav__row--btn-menu js-toggle-sm-navigation" type="button">
+									<span class="glyphicon glyphicon-align-justify"></span>
+								</button>
+							</div>
+
+							<div class="mobile__nav__row--table-cell visible-xs mobile__nav__row--seperator">
+								<button class="mobile__nav__row--btn btn mobile__nav__row--btn-search js-toggle-xs-search hidden-sm hidden-md hidden-lg" type="button">
+										<span class="glyphicon glyphicon-search"></span>
+									</button>
+								</div>
+
+							<div class="mobile__nav__row--table-cell hidden-sm hidden-md hidden-lg mobile__nav__row--seperator">
+										<a href="/yacceleratorstorefront/electronics/en/store-finder" class="mobile__nav__row--btn mobile__nav__row--btn-location btn">
+											<span class="glyphicon glyphicon-map-marker"></span>
+										</a>
+									</div>
+								<div class="yCmsContentSlot miniCartSlot componentContainer mobile__nav__row--table hidden-sm hidden-md hidden-lg">
+<div class="yCmsComponent mobile__nav__row--table-cell">
+<div class="nav-order-tools js-nav-order-tools display-none NAVcompONENT" data-title="">
+        <nav class="nav-order-tools__child-wrap display-none">
+            <div>
+                        <a href="/yacceleratorstorefront/electronics/en/quickOrder" title="Quick Order">Quick Order</a></div>
+                <div>
+                        <a href="/yacceleratorstorefront/electronics/en/import/csv/saved-cart" title="Import Saved Cart">Import Saved Cart</a></div>
+                </nav>
+    </div>
+</div><div class="yCmsComponent mobile__nav__row--table-cell">
+<div class="nav-cart">
+	<a href="/yacceleratorstorefront/electronics/en/cart" class="mini-cart-link js-mini-cart-link" data-mini-cart-url="/yacceleratorstorefront/electronics/en/cart/rollover/MiniCart" data-mini-cart-refresh-url="/yacceleratorstorefront/electronics/en/cart/miniCart/SUBTOTAL" data-mini-cart-name="Cart" data-mini-cart-empty-name="Empty Cart" data-mini-cart-items-text="Items">
+		<div class="mini-cart-icon">
+			<span class="glyphicon glyphicon-shopping-cart "></span>
+		</div>
+		<div class="mini-cart-price js-mini-cart-price hidden-xs hidden-sm">
+				$0.00</div>
+			<div class="mini-cart-count js-mini-cart-count"><span class="nav-items-total">0<span class="items-desktop hidden-xs"> Items</span></span></div>
+		</a>
+</div>
+<div class="mini-cart-container js-mini-cart-container"></div></div></div></div>
+					</div>
+				</div>
+			</div>
+			<div class="row desktop__nav">
+				<div class="nav__left col-xs-12 col-sm-6">
+					<div class="row">
+						<div class="col-sm-2 hidden-xs visible-sm mobile-menu">
+							<button class="btn js-toggle-sm-navigation" type="button">
+								<span class="glyphicon glyphicon-align-justify"></span>
+							</button>
+						</div>
+						<div class="col-sm-10">
+							<div class="site-search">
+								<div class="yCmsComponent">
+<div class="ui-front">
+	<form name="search_form_SearchBox" method="get" action="/yacceleratorstorefront/electronics/en/search/">
+		<div class="input-group">
+			<input type="text" id="js-site-search-input" class="form-control js-site-search-input ui-autocomplete-input" name="text" value="" maxlength="100" placeholder="I'm looking for" data-options="{&quot;autocompleteUrl&quot; : &quot;/yacceleratorstorefront/electronics/en/search/autocomplete/SearchBox&quot;,&quot;minCharactersBeforeRequest&quot; : &quot;3&quot;,&quot;waitTimeBeforeRequest&quot; : &quot;500&quot;,&quot;displayProductImages&quot; : true}" autocomplete="off" />
+			<span class="input-group-btn"> <button class="btn btn-link js_search_button" type="submit" disabled="true">
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+				</span>
+		</div>
+	</form>
+
+<ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0" style="display: none;"></ul></div>
+</div></div>
+						</div>
+					</div>
+				</div>
+				<div class="nav__right col-xs-6 col-xs-6 hidden-xs">
+					<ul class="nav__links nav__links--shop_info">
+						<li>
+							<div class="nav-location hidden-xs">
+										<a href="/yacceleratorstorefront/electronics/en/store-finder" class="btn">
+											<span class="glyphicon glyphicon-map-marker"></span>
+										</a>
+									</div>
+								</li>
+
+						<li>
+							<div class="yCmsContentSlot componentContainer">
+<div class="yCmsComponent">
+<div class="nav-order-tools js-nav-order-tools display-none NAVcompONENT" data-title="">
+        <nav class="nav-order-tools__child-wrap display-none">
+            <div>
+                        <a href="/yacceleratorstorefront/electronics/en/quickOrder" title="Quick Order">Quick Order</a></div>
+                <div>
+                        <a href="/yacceleratorstorefront/electronics/en/import/csv/saved-cart" title="Import Saved Cart">Import Saved Cart</a></div>
+                </nav>
+    </div>
+</div><div class="yCmsComponent">
+<div class="nav-cart">
+	<a href="/yacceleratorstorefront/electronics/en/cart" class="mini-cart-link js-mini-cart-link" data-mini-cart-url="/yacceleratorstorefront/electronics/en/cart/rollover/MiniCart" data-mini-cart-refresh-url="/yacceleratorstorefront/electronics/en/cart/miniCart/SUBTOTAL" data-mini-cart-name="Cart" data-mini-cart-empty-name="Empty Cart" data-mini-cart-items-text="Items">
+		<div class="mini-cart-icon">
+			<span class="glyphicon glyphicon-shopping-cart "></span>
+		</div>
+		<div class="mini-cart-price js-mini-cart-price hidden-xs hidden-sm">
+				$0.00</div>
+			<div class="mini-cart-count js-mini-cart-count"><span class="nav-items-total">0<span class="items-desktop hidden-xs"> Items</span></span></div>
+		</a>
+</div>
+<div class="mini-cart-container js-mini-cart-container"></div></div></div></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<a id="skiptonavigation"></a>
+	<nav class="navigation navigation--bottom js_navigation--bottom js-enquire-offcanvas-navigation" role="navigation">
+		<ul class="sticky-nav-top hidden-lg hidden-md js-sticky-user-group hidden-md hidden-lg"><li class="auto liUserSign"><a class="userSign" href="https://electronics.local:9002/yacceleratorstorefront/electronics/en/login">
+											Sign in / Register</a><div class="close-nav"><button type="button" class="js-toggle-sm-navigation btn"><span class="glyphicon glyphicon-remove"></span></button></div></li></ul>
+		<div class="navigation__overflow">
+			<ul data-trigger="#signedInUserOptionsToggle" class="nav__links nav__links--products nav__links--mobile js-userAccount-Links js-nav-collapse-body offcanvasGroup1 collapse in hidden-md hidden-lg">
+                   </ul>
+           	<ul class="nav__links nav__links--products js-offcanvas-links">
+				<li class="auto nav__links--primary nav__links--primary-has__sub js-enquire-has-sub">
+						<span class="yCmsComponent nav__link js_nav__link">
+<a href="/yacceleratorstorefront/electronics/en/Brands/c/brands" title="Brands">Brands</a></span><span class="glyphicon  glyphicon-chevron-right hidden-md hidden-lg nav__link--drill__down js_nav__link--drill__down"></span>
+							<div class="sub__navigation js_sub__navigation col-md-6 col-lg-4">
+								<a class="sm-back js-enquire-sub-close hidden-md hidden-lg" href="#">Back</a>
+								<div class="row">
+									<div class="sub-navigation-section col-md-6">
+													<div class="title">Cameras</div>
+													<ul class="sub-navigation-list has-title">
+														<li class="yCmsComponent nav__link--secondary">
+<a href="/yacceleratorstorefront/electronics/en/Brands/Canon/c/brand_10" title="Canon">Canon</a></li><li class="yCmsComponent nav__link--secondary">
+<a href="/yacceleratorstorefront/electronics/en/Brands/Sony/c/brand_5" title="Sony">Sony</a></li><li class="yCmsComponent nav__link--secondary">
+<a href="/yacceleratorstorefront/electronics/en/Brands/Kodak/c/brand_88" title="Kodak">Kodak</a></li><li class="yCmsComponent nav__link--secondary">
+<a href="/yacceleratorstorefront/electronics/en/Brands/Samsung/c/brand_26" title="Samsung">Samsung</a></li><li class="yCmsComponent nav__link--secondary">
+<a href="/yacceleratorstorefront/electronics/en/Brands/Toshiba/c/brand_2" title="Toshiba">Toshiba</a></li><li class="yCmsComponent nav__link--secondary">
+<a href="/yacceleratorstorefront/electronics/en/Brands/Fujifilm/c/brand_75" title="Fujifilm">Fujifilm</a></li></ul>
+												</div>	
+											<div class="sub-navigation-section col-md-6">
+													<div class="title">Accessories</div>
+													<ul class="sub-navigation-list has-title">
+														<li class="yCmsComponent nav__link--secondary">
+<a href="/yacceleratorstorefront/electronics/en/Brands/Kingston/c/brand_18" title="Kingston">Kingston</a></li><li class="yCmsComponent nav__link--secondary">
+<a href="/yacceleratorstorefront/electronics/en/Brands/ICIDU/c/brand_2171" title="Icidu">Icidu</a></li><li class="yCmsComponent nav__link--secondary">
+<a href="/yacceleratorstorefront/electronics/en/Brands/TDK/c/brand_251" title="TDK">TDK</a></li><li class="yCmsComponent nav__link--secondary">
+<a href="/yacceleratorstorefront/electronics/en/Brands/Sweex/c/brand_702" title="Sweex">Sweex</a></li></ul>
+												</div>	
+											</div>
+							</div>
+						</li>
+				<li class="auto nav__links--primary nav__links--primary-has__sub js-enquire-has-sub">
+						<span class="yCmsComponent nav__link js_nav__link">
+<a href="/yacceleratorstorefront/electronics/en/Open-Catalogue/Cameras/Digital-Cameras/c/575" title="Digital Cameras">Digital Cameras</a></span><span class="glyphicon  glyphicon-chevron-right hidden-md hidden-lg nav__link--drill__down js_nav__link--drill__down"></span>
+							<div class="sub__navigation js_sub__navigation col-md-3 col-lg-2">
+								<a class="sm-back js-enquire-sub-close hidden-md hidden-lg" href="#">Back</a>
+								<div class="row">
+									<div class="sub-navigation-section col-md-12">
+									    		<ul class="sub-navigation-list ">
+										        	<li class="yCmsComponent nav__link--secondary">
+<a href="/yacceleratorstorefront/electronics/en/Open-Catalogue/Cameras/Digital-Cameras/Digital-Compacts/c/576" title="Compact Cameras">Compact Cameras</a></li><li class="yCmsComponent nav__link--secondary">
+<a href="/yacceleratorstorefront/electronics/en/Open-Catalogue/Cameras/Digital-Cameras/Digital-SLR/c/578" title="SLR Cameras">SLR Cameras</a></li></ul>
+											</div>	
+									    </div>
+							</div>
+						</li>
+				<li class="auto nav__links--primary ">
+						<span class="yCmsComponent nav__link js_nav__link">
+<a href="/yacceleratorstorefront/electronics/en/Open-Catalogue/Cameras/Film-cameras/c/574" title="Film Cameras">Film Cameras</a></span></li>
+				<li class="auto nav__links--primary ">
+						<span class="yCmsComponent nav__link js_nav__link">
+<a href="/yacceleratorstorefront/electronics/en/Open-Catalogue/Cameras/Hand-held-Camcorders/c/584" title="Hand Held Camcorders">Hand Held Camcorders</a></span></li>
+				<li class="auto nav__links--primary ">
+						<span class="yCmsComponent nav__link js_nav__link">
+<a href="/yacceleratorstorefront/electronics/en/Open-Catalogue/Cameras/Webcams/c/577" title="Webcams">Webcams</a></span></li>
+				<li class="auto nav__links--primary ">
+						<span class="yCmsComponent nav__link js_nav__link">
+<a href="/yacceleratorstorefront/electronics/en/Open-Catalogue/Components/Power-Supplies/c/816" title="Power Supplies">Power Supplies</a></span></li>
+				<li class="auto nav__links--primary ">
+						<span class="yCmsComponent nav__link js_nav__link">
+<a href="/yacceleratorstorefront/electronics/en/Open-Catalogue/Data-storage/Flash-Memory/c/902" title="Flash Memory">Flash Memory</a></span></li>
+				<li class="auto nav__links--primary nav__links--primary-has__sub js-enquire-has-sub">
+						<span class="yCmsComponent nav__link js_nav__link">
+<a href="/yacceleratorstorefront/electronics/en/Open-Catalogue/Cameras/Camera-Accessories-%26-Supplies/c/585" title="Camera Accessories &amp; Supplies">Camera Accessories &amp; Supplies</a></span><span class="glyphicon  glyphicon-chevron-right hidden-md hidden-lg nav__link--drill__down js_nav__link--drill__down"></span>
+							<div class="sub__navigation js_sub__navigation col-md-6 col-lg-4">
+								<a class="sm-back js-enquire-sub-close hidden-md hidden-lg" href="#">Back</a>
+								<div class="row">
+									<div class="sub-navigation-section col-md-6">
+													<div class="title">Accessories</div>
+													<ul class="sub-navigation-list has-title">
+														<li class="yCmsComponent nav__link--secondary">
+<a href="/yacceleratorstorefront/electronics/en/Open-Catalogue/Cameras/Camera-Accessories-%26-Supplies/Camera-Flashes/c/586" title="Camera Flashes">Camera Flashes</a></li><li class="yCmsComponent nav__link--secondary">
+<a href="/yacceleratorstorefront/electronics/en/Open-Catalogue/Cameras/Digital-Cameras/Digital-SLR/Tripods/c/587" title="Tripods">Tripods</a></li><li class="yCmsComponent nav__link--secondary">
+<a href="/yacceleratorstorefront/electronics/en/Open-Catalogue/Cameras/Digital-Cameras/Digital-SLR/Camera-Lenses/c/588" title="Camera Lenses">Camera Lenses</a></li></ul>
+												</div>	
+											<div class="sub-navigation-section col-md-6">
+													<div class="title">Supplies</div>
+													<ul class="sub-navigation-list has-title">
+														<li class="yCmsComponent nav__link--secondary">
+<a href="/yacceleratorstorefront/electronics/en/Open-Catalogue/Cameras/Camera-Accessories-%26-Supplies/Colour-Films/c/597" title="Color Films">Color Films</a></li><li class="yCmsComponent nav__link--secondary">
+<a href="/yacceleratorstorefront/electronics/en/Open-Catalogue/Cameras/Camera-Accessories-%26-Supplies/Black-%26-White-Films/c/598" title="Black &amp; White Films">Black &amp; White Films</a></li><li class="yCmsComponent nav__link--secondary">
+<a href="/yacceleratorstorefront/electronics/en/Open-Catalogue/Cameras/Camera-Accessories-%26-Supplies/Blank-Video-Tapes/c/604" title="Blank Videotapes">Blank Videotapes</a></li></ul>
+												</div>	
+											</div>
+							</div>
+						</li>
+				</ul>
+		</div>
+	</nav>
+<div class="breadcrumb-section">
+		<ol class="breadcrumb">
+	<li>
+		<a href="/yacceleratorstorefront/electronics/en/">Home</a>
+	</li>
+
+	<li class="active">Sign in / Register</li>
+			</ol>
+</div>
+</header>
+
+
+<div class="yCmsContentSlot container-fluid">
+</div><a id="skip-to-content"></a>
+		
+			<div>
+				<div class="row">
+		<div class="col-md-6">
+			<div class="yCmsContentSlot login-left-content-slot">
+<div class="yCmsComponent login-left-content-component">
+<div class="login-section">
+	<div class="login-page__headline">
+	Returning Customer</div>
+
+<p>
+		Already have an account? Sign in to retrieve your account settings.</p>
+<form id="loginForm" action="/yacceleratorstorefront/electronics/en/j_spring_security_check" method="post"><div class="form-group">
+				<label class="control-label " for="j_username">
+			Email Address</label>
+			
+		<input id="j_username" name="j_username" class=" form-control" type="text" value="" /></div>
+		<div class="form-group">
+				<label class="control-label " for="j_password">
+			Password</label>
+		<input id="j_password" name="j_password" class="form-control" type="password" value="" autocomplete="off" /></div>
+		<div class="forgotten-password">
+				<a href="#" data-link="/yacceleratorstorefront/electronics/en/login/pw/request" class="js-password-forgotten" data-cbox-title="Reset Password">
+						Forgot your password?</a>
+				</div>
+		<button type="submit" class="btn btn-primary btn-block">
+				Log In</button>
+		<div>
+<input type="hidden" name="CSRFToken" value="7c1d6166-fba3-414d-8289-ffee7d4af1cb" />
+</div></form></div>
+</div></div></div>
+		<div class="col-md-6">
+			<div class="yCmsContentSlot login-right-content-slot">
+<div class="yCmsComponent login-right-content-component">
+<div class="register__section">
+	<div class="user-register__headline">
+	Create an Account</div>
+<p>
+	For a fast checkout, easy access to previous orders, and the ability to create an address book and store settings. Register below.</p>
+
+<form id="registerForm" action="/yacceleratorstorefront/electronics/en/login/register" method="post"><div class="form-group">
+				<label class="control-label " for="register.title">
+				Title<span class="mandatory">
+						</span>
+				<span class="skip">
+						</span>
+			</label>
+			<div class="control">
+				<select id="register.title" name="titleCode" class="form-control"><option value="" disabled="disabled" selected="selected">
+							Please select</option>
+					<option value="mr">Mr.</option><option value="mrs">Mrs.</option><option value="miss">Miss</option><option value="ms">Ms.</option><option value="dr">Dr.</option><option value="rev">Rev.</option></select></div>
+	</div>
+		<div class="form-group">
+				<label class="control-label " for="register.firstName">
+			First Name</label>
+			
+		<input id="register.firstName" name="firstName" class="form-control form-control" type="text" value="" /></div>
+		<div class="form-group">
+				<label class="control-label " for="register.lastName">
+			Last Name</label>
+			
+		<input id="register.lastName" name="lastName" class="form-control form-control" type="text" value="" /></div>
+		<div class="form-group">
+				<label class="control-label " for="register.email">
+			Email Address</label>
+			
+		<input id="register.email" name="email" class="form-control form-control" type="text" value="" /></div>
+		<div class="form-group">
+				<label class="control-label " for="password">
+			Password</label>
+		<input id="password" name="pwd" class="form-control password-strength" type="password" value="" autocomplete="off" /><div class="help-block" id="password_minchar">Minimum length is 6 characters</div><div id="password_bar" class="progress" style="display: none;"><div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"><span id="password_text">0%<span></span></span></div></div></div>
+		<div class="form-group">
+				<label class="control-label " for="register.checkPwd">
+			Confirm Password</label>
+		<input id="register.checkPwd" name="checkPwd" class="form-control" type="password" value="" autocomplete="off" /></div>
+		<input type="hidden" id="recaptchaChallangeAnswered" value="" />
+	<div class="form_field-elements control-group js-recaptcha-captchaaddon"></div>
+	<div class="form-actions clearfix">
+		<button type="submit" class="btn btn-default btn-block">
+				Register</button>
+		</div>
+<div>
+<input type="hidden" name="CSRFToken" value="7c1d6166-fba3-414d-8289-ffee7d4af1cb" />
+</div></form></div>
+</div></div></div>
+	</div>
+</div>
+
+			<footer>
+    <div class="container-fluid">
+	    <div class="footer__top">
+	        <div class="row">
+	            <div class="footer__left col-xs-12 col-sm-12 col-md-9">
+	                <div class="row">
+	                	<div class="footer__nav--container col-xs-12 col-sm-3">
+		                	       <div class="title">Accelerator</div>
+	                               <ul class="footer__nav--links">
+	                                   <li class="yCmsComponent footer__link">
+<a href="http://www.hybris.com/multichannel-accelerator" title="About Commerce Accelerator" target="_blank" rel="noopener noreferrer">About Commerce Accelerator</a></li><li class="yCmsComponent footer__link">
+<a href="/yacceleratorstorefront/electronics/en/faq" title="FAQ">FAQ</a></li></ul>
+	                		   </div>
+						    <div class="footer__nav--container col-xs-12 col-sm-3">
+		                	       <div class="title">Hybris</div>
+	                               <ul class="footer__nav--links">
+	                                   <li class="yCmsComponent footer__link">
+<a href="http://www.hybris.com" title="About hybris" target="_blank" rel="noopener noreferrer">About hybris</a></li><li class="yCmsComponent footer__link">
+<a href="http://www.hybris.com/contact" title="Contact Us" target="_blank" rel="noopener noreferrer">Contact Us</a></li></ul>
+	                		   </div>
+						    <div class="footer__nav--container col-xs-12 col-sm-3">
+		                	       <div class="title">Follow Us</div>
+	                               <ul class="footer__nav--links">
+	                                   <li class="yCmsComponent footer__link">
+<a href="http://www.agile-commerce.com/" title="Agile Commerce Blog" target="_blank" rel="noopener noreferrer">Agile Commerce Blog</a></li><li class="yCmsComponent footer__link">
+<a href="http://www.linkedin.com/company/97435" title="Linked In" target="_blank" rel="noopener noreferrer">Linked In</a></li><li class="yCmsComponent footer__link">
+<a href="http://www.facebook.com/hybrissoftware" title="Facebook" target="_blank" rel="noopener noreferrer">Facebook</a></li><li class="yCmsComponent footer__link">
+<a href="http://twitter.com/#!/hybris_software" title="Twitter" target="_blank" rel="noopener noreferrer">Twitter</a></li></ul>
+	                		   </div>
+						    </div>
+	           </div>
+	           <div class="footer__right col-xs-12 col-md-3">
+	               <div class="row">
+	                       <div class="col-xs-6 col-md-6 footer__dropdown">
+	                           <form id="lang-form" action="/yacceleratorstorefront/electronics/en/_s/language" method="post"><div class="form-group">
+			<label class="control-label sr-only" for="lang-selector">Select Language</label>
+
+			<select name="code" id="lang-selector" class="form-control">
+					<option value="ja" lang="ja">
+									日本語</option>
+							<option value="en" selected="selected" lang="en">English</option>
+							<option value="de" lang="de">
+									Deutsch</option>
+							<option value="zh" lang="zh">
+									中文</option>
+							</select>
+			</div>
+	<div>
+<input type="hidden" name="CSRFToken" value="7c1d6166-fba3-414d-8289-ffee7d4af1cb" />
+</div></form></div>
+	                       <div class="col-xs-6 col-md-6 footer__dropdown">
+	                           <form id="currency-form" action="/yacceleratorstorefront/electronics/en/_s/currency" method="post"><div class="form-group">
+			<label class="control-label sr-only" for="currency-selector">
+				Select Currency</label>
+
+			<select name="code" id="currency-selector" class="form-control">
+					<option value="JPY">
+							¥ JPY</option>
+					<option value="USD" selected="selected">
+							$ USD</option>
+					</select>
+			</div>
+	<div>
+<input type="hidden" name="CSRFToken" value="7c1d6166-fba3-414d-8289-ffee7d4af1cb" />
+</div></form></div>
+	                   </div>
+	               </div>
+	        </div>
+	    </div>
+	</div>
+	
+	<div class="footer__bottom">
+	    <div class="footer__copyright">
+	        <div class="container">© 2016 hybris software</div>
+	    </div>
+	</div>
+</footer>
+
+</main>
+
+	<form name="accessiblityForm">
+		<input type="hidden" id="accesibility_refreshScreenReaderBufferField" name="accesibility_refreshScreenReaderBufferField" value="" />
+	</form>
+	<div id="ariaStatusMsg" class="skip" role="status" aria-relevant="text" aria-live="polite"></div>
+
+	<script type="text/javascript">
+		/*&lt;![CDATA[*/
+		
+		var ACC = { config: {} };
+			ACC.config.contextPath = "/yacceleratorstorefront";
+			ACC.config.encodedContextPath = "/yacceleratorstorefront/electronics/en";
+			ACC.config.commonResourcePath = "/yacceleratorstorefront/_ui/responsive/common";
+			ACC.config.themeResourcePath = "/yacceleratorstorefront/_ui/responsive/theme-alpha";
+			ACC.config.siteResourcePath = "/yacceleratorstorefront/_ui/responsive/site-electronics";
+			ACC.config.rootPath = "/yacceleratorstorefront/_ui/responsive";	
+			ACC.config.CSRFToken = "7c1d6166-fba3-414d-8289-ffee7d4af1cb";
+			ACC.pwdStrengthVeryWeak = 'Very weak';
+			ACC.pwdStrengthWeak = 'Weak';
+			ACC.pwdStrengthMedium = 'Medium';
+			ACC.pwdStrengthStrong = 'Strong';
+			ACC.pwdStrengthVeryStrong = 'Very strong';
+			ACC.pwdStrengthUnsafePwd = 'password.strength.unsafepwd';
+			ACC.pwdStrengthTooShortPwd = 'Too short';
+			ACC.pwdStrengthMinCharText = 'Minimum length is %d characters';
+			ACC.accessibilityLoading = 'Loading... Please wait...';
+			ACC.accessibilityStoresLoaded = 'Stores loaded';
+			ACC.config.googleApiKey="";
+			ACC.config.googleApiVersion="3.7";
+
+			
+			ACC.autocompleteUrl = '/yacceleratorstorefront/electronics/en/search/autocompleteSecure';
+
+			
+			ACC.config.loginUrl = '/yacceleratorstorefront/electronics/en/login';
+
+			
+			ACC.config.authenticationStatusUrl = '/yacceleratorstorefront/electronics/en/authentication/status';
+
+			
+		/*]]&gt;*/
+	</script>
+	<script type="text/javascript">
+	/*&lt;![CDATA[*/
+	ACC.addons = {};	//JS holder for addons properties
+			
+	
+		ACC.addons.commerceorgsamplesaddon = [];
+		
+		ACC.addons.adaptivesearchsamplesaddon = [];
+		
+		ACC.addons.textfieldconfiguratortemplateaddon = [];
+		
+		ACC.addons.smarteditaddon = [];
+		
+		ACC.addons.orderselfserviceaddon = [];
+		
+		ACC.addons.liveeditaddon = [];
+		
+				ACC.addons.liveeditaddon['liveeditaddon.message.slot.tooltip.action.add'] = 'Add new component to content slot';
+			
+				ACC.addons.liveeditaddon['liveeditaddon.message.slot.tooltip.action.edit_menu'] = 'Edit menu';
+			
+				ACC.addons.liveeditaddon['liveeditaddon.message.slot.tooltip.action.override'] = 'Override content slot';
+			
+				ACC.addons.liveeditaddon['liveeditaddon.message.slot.tooltip.action.create'] = 'Create new content slot';
+			
+		ACC.addons.customerticketingaddon = [];
+		
+		ACC.addons.assistedservicestorefront = [];
+		
+				ACC.addons.assistedservicestorefront['asm.timer.min'] = 'min';
+			
+	/*]]&gt;*/
+</script>
+<script type="text/javascript" src="/yacceleratorstorefront/_ui/shared/js/generatedVariables.js"></script><script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/jquery-2.1.1.min.js"></script>
+		
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/bootstrap/dist/js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/enquire.min.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/Imager.min.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/jquery.blockUI-2.66.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/jquery.colorbox-min.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/jquery.form.min.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/jquery.hoverIntent.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/jquery.pstrength.custom-1.2.0.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/jquery.syncheight.custom.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/jquery.tabs.custom.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/jquery-ui-1.11.2.min.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/jquery.zoom.custom.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/owl.carousel.custom.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/jquery.tmpl-1.0.0pre.min.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/jquery.currencies.min.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/jquery.waitforimages.min.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/jquery.slideviewer.custom.1.2.js"></script>
+		
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.address.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.autocomplete.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.carousel.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.cart.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.cartitem.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.checkout.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.checkoutaddress.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.checkoutsteps.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.cms.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.colorbox.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.common.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.forgottenpassword.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.global.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.hopdebug.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.imagegallery.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.langcurrencyselector.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.minicart.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.navigation.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.order.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.paginationsort.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.payment.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.paymentDetails.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.pickupinstore.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.product.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.productDetail.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.quickview.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.ratingstars.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.refinements.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.silentorderpost.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.tabs.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.termsandconditions.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.track.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.storefinder.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.futurelink.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.productorderform.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.savedcarts.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.multidgrid.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.quickorder.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.quote.js"></script>
+
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/acc.csv-import.js"></script>
+
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/responsive/common/js/_autoload.js"></script>
+		
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/addons/smarteditaddon/shared/common/js/webApplicationInjector.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/addons/smarteditaddon/shared/common/js/reprocessPage.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/addons/smarteditaddon/shared/common/js/adjustComponentRenderingToSE.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/addons/smarteditaddon/responsive/common/js/smarteditaddon.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/addons/textfieldconfiguratortemplateaddon/responsive/common/js/textfieldconfiguratortemplateaddon.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/addons/customerticketingaddon/responsive/common/js/customerticketingaddon.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/addons/assistedservicestorefront/responsive/common/js/assistedservicestorefront.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/addons/assistedservicestorefront/responsive/common/js/jquery.tablesorter.pager.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/addons/assistedservicestorefront/responsive/common/js/jquery.tablesorter.min.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/addons/assistedservicestorefront/responsive/common/js/Chart.min.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/addons/assistedservicestorefront/responsive/common/js/asm.storefinder.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/addons/orderselfserviceaddon/responsive/common/js/orderselfserviceaddon.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/addons/orderselfserviceaddon/responsive/common/js/cms/cancelorderaction.js"></script>
+		<script type="text/javascript" src="/yacceleratorstorefront/_ui/addons/orderselfserviceaddon/responsive/common/js/cms/returnorderaction.js"></script>
+		
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span></body></html>

@@ -11,10 +11,11 @@ import static org.junit.Assert.*;
 @DefaultUrl("https://electronics.local:9002/yacceleratorstorefront/electronics/en/")
 public class BasePage extends PageObject{
 
-    public String defaultURL = "https://electronics.local:9002/yacceleratorstorefront/electronics/en/";
-
     @FindBy(xpath = "//header/nav[1]/div/div[2]/div/ul/li/a")
     WebElement loginRegisterLink;
+
+    @FindBy(className = "myAccountLinksHeader")
+    WebElement myAccountLinkInHeader;
 
     @FindBy(id = "ui-id-1")
     WebElement searchField;
@@ -36,8 +37,4 @@ public class BasePage extends PageObject{
         waitFor(siteLogo);
     }
 
-
-    public void navigateToStorefront(String s) {
-
-    }
 }

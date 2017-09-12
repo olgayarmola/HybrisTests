@@ -22,9 +22,6 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//main/div[3]/div/div[1]/div/div/div/form/button")
     WebElement loginButton;
 
-    @FindBy(className = "myAccountLinksHeader")
-    WebElement myAccountLinkInHeader;
-
     public void enterLoginEmail(String login){
         emailAddressField.sendKeys(login);
     }

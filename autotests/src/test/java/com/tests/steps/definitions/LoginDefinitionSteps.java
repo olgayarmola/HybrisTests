@@ -12,8 +12,8 @@ public class LoginDefinitionSteps {
     @Steps
     LoginSteps steps;
 
-    @Given("^open \"([^\"]*)\" page$")
-    public void openPage(String arg0) throws Throwable {
+    @Given("^open login page$")
+    public void openLoginPage() throws Throwable {
         steps.navigateToStorefront();
         steps.navigateToSignInPage();
     }
@@ -41,4 +41,6 @@ public class LoginDefinitionSteps {
     public void theUserIsLoggedIn() throws Throwable {
         steps.verifyUserIsLoggedIn();
     }
+
+
 }
