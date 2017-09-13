@@ -43,4 +43,22 @@ public class LoginDefinitionSteps {
     }
 
 
+    @When("^click on the Sign Out link$")
+    public void clickOnTheSignOutLink() throws Throwable {
+        steps.clickSignOutLink();
+    }
+
+    @Given("^user with email \"([^\"]*)\" and password \"([^\"]*)\" logged in on any page$")
+    public void userWithEmailAndPasswordLoggedInOnAnyPage(String arg0, String arg1) throws Throwable {
+        steps.navigateToStorefront();
+        steps.navigateToSignInPage();
+        steps.enterLoginEmail(arg0);
+        steps.enterPassword(arg1);
+        steps.clickLoginButton();
+    }
+
+    @Then("^user is logged out$")
+    public void userIsLoggedOut() throws Throwable {
+        steps.verifyUserIsLoggedOut();
+    }
 }

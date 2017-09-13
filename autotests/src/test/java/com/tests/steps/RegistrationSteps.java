@@ -2,15 +2,16 @@ package com.tests.steps;
 
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import pages.BasePage;
-import pages.RegistrationPage;
+import com.tests.pages.BasePage;
+import com.tests.pages.RegistrationPage;
 
 public class RegistrationSteps extends ScenarioSteps{
 
     RegistrationPage registrationPage;
+    BasePage basePage;
 
     @Step
-    public void navigateToRegistrationPage(){ registrationPage.open(); }
+    public void navigateToRegistrationPage(){ basePage.open(); registrationPage.navigateToSignInPage();}
     @Step
     public void selectTitle(String title){
         registrationPage.selectTitle(title);

@@ -1,15 +1,13 @@
-package pages;
-import com.gargoylesoftware.htmlunit.Page;
-import net.serenitybdd.core.*;
+package com.tests.pages;
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
 import net.thucydides.core.annotations.DefaultUrl;
-import org.openqa.selenium.WebDriver;
+import org.fluentlenium.core.annotation.Page;
 import org.openqa.selenium.WebElement;
-import static org.junit.Assert.*;
 
 @DefaultUrl("https://electronics.local:9002/yacceleratorstorefront/electronics/en/")
 public class BasePage extends PageObject{
+
 
     @FindBy(xpath = "//header/nav[1]/div/div[2]/div/ul/li/a")
     WebElement loginRegisterLink;
@@ -17,8 +15,14 @@ public class BasePage extends PageObject{
     @FindBy(className = "myAccountLinksHeader")
     WebElement myAccountLinkInHeader;
 
+    @FindBy(xpath = "//header/nav[1]/div/div[2]/div/ul/li[3]/a")
+    WebElement signOutLinkInHeader;
+
     @FindBy(id = "ui-id-1")
     WebElement searchField;
+
+    @FindBy(css = ".ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content")
+    WebElement searchAutocompleteBox;
 
     @FindBy(xpath = "/html/body/main/header/nav[1]/div/div[1]/div/div/div/a/img")
     WebElement siteLogo;
@@ -32,9 +36,20 @@ public class BasePage extends PageObject{
     @FindBy(className = "mini-cart-link js-mini-cart-link")
     WebElement cartIconLink;
 
+    @FindBy(css = ".nav__links.nav__links--products.js-offcanvas-links")
+    WebElement navigationSection;
+
+    @FindBy(className = "breadcrumb")
+    WebElement breadcrumbs;
+
+
     public void navigateToSignInPage(){
         clickOn(loginRegisterLink);
         waitFor(siteLogo);
+    }
+
+    public void enterInTheSearch(String query){
+        searchField.sendKeys(query);
     }
 
 }

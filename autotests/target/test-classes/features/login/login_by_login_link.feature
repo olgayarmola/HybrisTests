@@ -1,7 +1,7 @@
 Feature: Login on site
-  As a customer on the site I want to login to my account with my login and password
+  As a customer of the site I want to login to my account with my login and password
 
-  @Regression
+  @Regression, @Smoke
   Scenario: Verify that user can login on site by entering e-mail and password
    Given open login page
     When enter "olga.yarmola@zaelab.com" in the E-mail address field

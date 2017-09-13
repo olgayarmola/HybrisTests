@@ -1,12 +1,11 @@
-package pages;
+package com.tests.pages;
 
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.thucydides.core.annotations.DefaultUrl;
-import org.jsoup.Connection;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 
-@DefaultUrl("https://electronics.local:9002/yacceleratorstorefront/electronics/en/")
+@DefaultUrl("https://electronics.local:9002/yacceleratorstorefront/electronics/en/login")
 public class LoginPage extends BasePage {
 
     //Returning Customer form
@@ -35,6 +34,11 @@ public class LoginPage extends BasePage {
 
     public void verifyUserIsLoggedIn() {
         Assert.assertTrue(myAccountLinkInHeader.isDisplayed());
+    }
+
+    public void clickSignOutLink() {signOutLinkInHeader.click();   }
+
+    public void verifyUserLoggedOut() {Assert.assertTrue(loginRegisterLink.isDisplayed());
     }
 
     //Create An Account form

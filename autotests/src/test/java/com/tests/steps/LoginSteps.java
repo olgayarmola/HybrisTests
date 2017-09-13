@@ -2,7 +2,7 @@ package com.tests.steps;
 
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
-import pages.LoginPage;
+import com.tests.pages.LoginPage;
 
 public class LoginSteps extends ScenarioSteps {
 
@@ -36,5 +36,10 @@ public class LoginSteps extends ScenarioSteps {
     @Step
     public void verifyUserIsLoggedIn() {
         loginPage.verifyUserIsLoggedIn();
+    }
+
+    public void clickSignOutLink() { loginPage.clickSignOutLink();}
+
+    public void verifyUserIsLoggedOut() { loginPage.verifyUserLoggedOut();
     }
 }

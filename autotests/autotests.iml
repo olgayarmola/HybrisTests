@@ -151,5 +151,14 @@
     <orderEntry type="library" name="Maven: org.glassfish.hk2:hk2-locator:2.5.0-b32" level="project" />
     <orderEntry type="library" name="Maven: org.javassist:javassist:3.20.0-GA" level="project" />
     <orderEntry type="library" name="Maven: javax.ws.rs:javax.ws.rs-api:2.0.1" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/src/test/java" />
+        </SOURCES>
+      </library>
+    </orderEntry>
   </component>
 </module>

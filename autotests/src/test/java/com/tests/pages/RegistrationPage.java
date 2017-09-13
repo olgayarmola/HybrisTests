@@ -1,11 +1,9 @@
-package pages;
+package com.tests.pages;
 
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.thucydides.core.annotations.DefaultUrl;
-import org.jsoup.Connection;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 
 @DefaultUrl("https://electronics.local:9002/yacceleratorstorefront/electronics/en/login")
 public class RegistrationPage extends BasePage{
