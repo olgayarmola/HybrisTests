@@ -61,4 +61,14 @@ public class LoginDefinitionSteps {
     public void userIsLoggedOut() throws Throwable {
         steps.verifyUserIsLoggedOut();
     }
+
+    @When("^click on the forgot password link$")
+    public void clickOnTheForgotPasswordLink() throws Throwable {
+        steps.clickForgotPasswordLink();
+    }
+
+    @Then("^the reset password popup is shown$")
+    public void theResetPasswordPopupIsShown() throws Throwable {
+        steps.verifyResetPasswordPopupIsShown();
+    }
 }

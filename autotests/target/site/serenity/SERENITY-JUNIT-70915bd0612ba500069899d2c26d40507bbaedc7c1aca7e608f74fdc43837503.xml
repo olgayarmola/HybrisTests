@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Login on site" skipped="0" tests="1" time="22.25" timestamp="2017-09-13T12:37:24.005+03:00[Europe/Helsinki]"><testcase name="Verify that user can login on site by entering e-mail and password"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Login on site" skipped="0" tests="1" time="14.86" timestamp="2017-09-19T11:16:59.237+03:00[Europe/Helsinki]"><testcase name="Verify that user can login on site by entering e-mail and password"/></testsuite>

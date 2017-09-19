@@ -42,4 +42,10 @@ public class LoginSteps extends ScenarioSteps {
 
     public void verifyUserIsLoggedOut() { loginPage.verifyUserLoggedOut();
     }
+
+    public void clickForgotPasswordLink() { loginPage.clickForgotPasswordLink();
+    }
+
+    public void verifyResetPasswordPopupIsShown() { loginPage.verifyResetPasswordPopupIsShown();
+    }
 }

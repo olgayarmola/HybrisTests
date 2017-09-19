@@ -2,6 +2,7 @@ package com.tests.pages;
 
 import net.serenitybdd.core.annotations.findby.FindBy;
 import net.serenitybdd.core.pages.PageObject;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 
 public class ProductDetailsPage extends BasePage {
@@ -39,4 +40,17 @@ public class ProductDetailsPage extends BasePage {
         element(productVariantSelector).selectByIndex(optionNumber);
     }
 
+    public void typeInQtyField(String arg0) {
+        productQtyInputField.clear();
+        productQtyInputField.sendKeys(arg0);
+    }
+
+    public void incrementProductQty() {
+        productQtyIncrement.click();
+    }
+
+    public void verifyProductQtyIs(int arg0) {
+        Assert.assertEquals("Verify qty in field", "3", ""+arg0+"");
+
+    }
 }

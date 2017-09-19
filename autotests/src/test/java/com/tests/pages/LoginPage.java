@@ -18,6 +18,9 @@ public class LoginPage extends BasePage {
     @FindBy(className = "forgotten-password")
     WebElement forgotPasswordLink;
 
+    @FindBy(id = "cboxContent")
+    WebElement forgotPasswordPopup;
+
     @FindBy(xpath = "//main/div[3]/div/div[1]/div/div/div/form/button")
     WebElement loginButton;
 
@@ -39,6 +42,14 @@ public class LoginPage extends BasePage {
     public void clickSignOutLink() {signOutLinkInHeader.click();   }
 
     public void verifyUserLoggedOut() {Assert.assertTrue(loginRegisterLink.isDisplayed());
+    }
+
+    public void clickForgotPasswordLink() {
+        forgotPasswordLink.click();
+    }
+
+    public void verifyResetPasswordPopupIsShown() {
+        forgotPasswordPopup.isDisplayed();
     }
 
     //Create An Account form
